@@ -1,0 +1,92 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>eaee6b3f-6339-425a-9811-b80a32f273b8</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>module2.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>architecture</Name>
+    <RootNamespace>architecture</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="ASS3.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Ass4_decorator.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ass4_composite.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ass5.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="module1.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="module2.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="module3.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="module4.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="week_7.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="week_6_wrapper.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="week_6_composit.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="week_6_redis.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="week_5_api.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="week_5_mediator.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="week_4_singleton_2.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="week4_singleton.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="week_4_objectpoolpattern_1.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="week_4_demo_1.py" />
+    <Compile Include="week_4_abstracttype_demo.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="config.cfg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
